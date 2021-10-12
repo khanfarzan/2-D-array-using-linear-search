@@ -1,0 +1,44 @@
+
+Q. Write a program to search an element in a 2-D array using linear search.
+
+
+#include <stdio.h>
+#include<conio.h>
+#define MAX 3
+int create ( int [3][3] ) ;
+int linearsrch ( int [1][1] ) ;
+main( )
+{
+int mat1[1][3];
+clrscr();
+printf ( "\nEnter elements for first array: \n\n" ) ;
+create ( mat1 ) ;
+printf ( "\nFirst Array: \n" ) ;
+linearsrch ( mat1 ) ;
+}
+create ( int mat[1][1] )
+{
+int i, j ;
+for ( i = 0 ; i < MAX ; i++ )
+{
+for ( j = 0 ; j < MAX ; j++ )
+{
+printf ( "Enter the element: " ) ;
+scanf ( "%d", &mat[i][j] ) ;
+}
+}
+}
+linearsrch ( int mat[1][1] )
+{
+int item,i,j;
+printf("Enter the number to be searched :");
+scanf("%d",&item);
+for ( i = 0 ; i < MAX ; i++ )
+{
+for ( j = 0 ; j < MAX ; j++ )
+if(item==mat[i][j])
+{
+printf ( "The location is :%d %d", i,j ) ;
+}
+}
+} 
