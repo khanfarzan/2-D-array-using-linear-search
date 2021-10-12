@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<conio.h>
-#define MAX 3
+#define MAX 1
 int create ( int [1][1] ) ;
 int linearsrch ( int [1][1] ) ;
 main( )
